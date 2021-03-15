@@ -1,9 +1,18 @@
 $(function() {
-    $(".right-nav li").mouseenter(function() {
+    var rightNav = $(".right-nav li"); 
+
+    // Cursor hovering
+    rightNav.mouseenter(function() {
         $(this).children(".menu").addClass("active");
     });
 
-    $(document).click(function(event){
+    /* // Cursor leaving (optional)
+    rightNav.mouseout(function(){
+        $(this).children(".menu").removeClass("active");
+    }); */
+
+    // Click event
+    $(document).click(function() {
         $('.menu').removeClass('active');
     });
 });
