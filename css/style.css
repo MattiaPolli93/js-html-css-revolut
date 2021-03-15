@@ -1,5 +1,61 @@
+/* Properties */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Header */
+.nav {
+    height: 15vh;
+    align-items: center;
+    border-bottom: 1px solid #d6d6d6;
+    font-size: 18px;
+}
+
+.nav li {
+    margin-right: 45px;
+    position: relative;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #9b9d9e;
+}
+
+.list-inline {
+    list-style: none;
+    justify-content: space-between;
+
+}
+
+.list-inline li a:hover {
+    transition: 0.5s;
+    color: #000;
+}
+
+.left-nav {
+    flex-basis: 30%;
+    justify-content: center;
+}
+
+.left-nav > img {
+    width: 15%;
+    margin-right: 50px;
+}
+
+.right-nav {
+    flex-basis: 70%;
+    justify-content: flex-end;
+    margin-right: 70px;
+}
+
+/* Menus */
+.menu {
+    /* display: none; */
+    position: absolute;
 }
