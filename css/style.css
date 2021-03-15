@@ -27,20 +27,20 @@
     color: #9b9d9e;
 }
 
+.nav li a:hover {
+    transition: 0.5s;
+    color: #000;
+}
+
 .list-inline {
     list-style: none;
     justify-content: space-between;
-
-}
-
-.list-inline li a:hover {
-    transition: 0.5s;
-    color: #000;
 }
 
 .left-nav {
     flex-basis: 30%;
     justify-content: center;
+    margin-left: 60px;
 }
 
 .left-nav > img {
@@ -56,6 +56,22 @@
 
 /* Menus */
 .menu {
-    /* display: none; */
+    display: none;
     position: absolute;
+    top: 120%;
+    left: 0;
+    margin-top: 15px;
+}
+
+.menu ul {
+    width: 210px;
+}
+
+.menu li {
+    list-style: none;
+    margin: 15px 0;
+}
+
+.active {
+    display: inline-block;
 }
