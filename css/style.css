@@ -11,6 +11,7 @@
 
 /* Header */
 .nav {
+    font-family: 'Roboto', sans-serif;
     height: 10vh;
     align-items: center;
     border-bottom: 1px solid #d6d6d6;
@@ -49,7 +50,7 @@
     cursor: pointer;
 }
 
-.personal {
+.left-nav ul li:first-child a {
     color: #000;
 }
 
@@ -71,7 +72,7 @@
     margin-bottom: 20px;
 }
 
-.menu {
+.dropdown-menu {
     display: none;
     position: absolute;
     top: 120%;
@@ -79,18 +80,18 @@
     margin-top: 15px;
 }
 
-.menu ul {
-    width: 180px;
+.dropdown-menu ul {
+    width: 170px;
 }
 
-.menu li {
+.dropdown-menu li {
     list-style: none;
     margin: 15px 0;
 }
 
 .active {
-    display: inline-block;
-    /* margin-top: 30px; */
+    display: block;
+    margin-top: 30px;
     padding: 0 10px;
     border: 1px solid #e6e6e6;
     border-radius: 5px;
@@ -98,18 +99,17 @@
 }
 
 /* Buttons */
-.sign-in {
+.btn {
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+a.sign-in {
     color: #000;
     background-color: #f0f0f0;
 }
 
-.get-app {
+a.get-app {
     color: #fff;
     background-color: #000;
-}
-
-.sign-in,
-.get-app {
-    padding: 12px 20px;
-    border-radius: 10px;
 }

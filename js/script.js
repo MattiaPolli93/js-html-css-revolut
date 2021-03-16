@@ -3,16 +3,12 @@ $(function() {
 
     // Cursor hovering
     rightNav.mouseenter(function() {
-        $(this).children(".menu").addClass("active");
+        $(this).siblings("li").children(".dropdown-menu").removeClass("active");
+        $(this).children(".dropdown-menu").addClass("active");
     });
 
-    /* // Cursor leaving (optional)
-    rightNav.mouseout(function(){
-        $(this).children(".menu").removeClass("active");
-    }); */
-
     // Click event
-    $(document).click(function() {
-        $('.menu').removeClass('active');
+    rightNav.click(function() {
+        $(this).children('.dropdown-menu').toggleClass('active');
     });
 });
